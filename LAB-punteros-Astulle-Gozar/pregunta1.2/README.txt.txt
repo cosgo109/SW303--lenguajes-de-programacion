@@ -1,0 +1,5 @@
+Apellidos: Astulle-Gozar
+a) ¿Cómo se almacena int m[3][4] en memoria? ¿Es un bloque contiguo? Verifíquenlo imprimiendo &m[0][0], &m[0][1], &m[1][0] y observando las diferencias.
+Sí, se almacenan uno al lado del otro, sin separaciones de ningún tipo como una gran lista de elementos. Se observa que &m[0][0] y &m[0][1] son contiguos, pues el tipo de dato int ocupa 4 bites, justo la distancia que hay entre ellos en la memoria, mientras que &m[0][0] y &m[1][0] están separados por 16 bytes porque entre ellos hay 4 datos de tipo int (4 bytes cada uno).
+b) ¿Cuál es la diferencia entre m[i][j] y *(*(m + i) + j)?
+Ambas expresiones son equivalentes, el primero es la forma más fácil de entender la posición de un elemento porque un arreglo bidimensional se interpreta como una matriz, el segundo en cambio usa aritmética de punteros para llegar al mismo resultado.
