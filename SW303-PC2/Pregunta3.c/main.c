@@ -10,7 +10,7 @@ int main (){
     scanf("%d",&d1);
 
     printf("Ingrese el numerador para la segunda fraccion\n");
-    scanf("%d",&d1);
+    scanf("%d",&n2);
 
     printf("Ingrese el denominador para la segunda fraccion\n");
     scanf("%d",&d2);
